@@ -36,7 +36,7 @@ batSpeed = 6
 def move_bat():
     batMove = batSpeed*rightPressed - batSpeed*leftPressed
     (batLeft, batTop, batRight, batBottom) = canvas.coords(bat)
-    if (batLeft > 0 or batMove > 0) and (batRight < canvasWidth or batmove < 0):
+    if (batLeft > 0 or batMove > 0) and (batRight < canvasWidth or batMove < 0):
         canvas.move(bat, batMove, 0)
 ballMoveX = 4
 ballMoveY = -4
